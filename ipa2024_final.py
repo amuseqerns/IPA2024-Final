@@ -22,7 +22,7 @@ ACCESS_TOKEN = os.environ.get("WEBEX_ACCESS_TOKEN")
 
 # Defines a variable that will hold the roomId
 roomIdToGetMessages = (
-    "<Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vOTFjY2VlZDAtOGJhYi0xMWVmLWFlMjctMjFhZDczMjVlN2Yx>"
+    "Y2lzY29zcGFyazovL3VzL1JPT00vNTFmNTJiMjAtNWQwYi0xMWVmLWE5YTAtNzlkNTQ0ZjRkNGZi"
 )
 
 while True:
@@ -52,6 +52,7 @@ while True:
         raise Exception(
             "Incorrect reply from Webex Teams API. Status code: {}".format(r.status_code)
         )
+    
 
     # get the JSON formatted returned data
     json_data = r.json()
